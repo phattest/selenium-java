@@ -1,0 +1,8 @@
+<suite name="the internet page">
+    <test name = "form authen">
+        <parameter name="browserName" value ="chrome"/>
+        <classes>
+            <class name="testcases.BMICalculatorTest"/>
+        </classes>
+    </test>
+</suite>
