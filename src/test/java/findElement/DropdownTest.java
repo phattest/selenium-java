@@ -15,8 +15,7 @@ import org.testng.annotations.Test;
  */
 
 
-public class dropdownTest {
-
+public class DropdownTest {
     @Test
     void validateOptionIsSelected(){
         WebDriverManager.chromedriver().setup();
