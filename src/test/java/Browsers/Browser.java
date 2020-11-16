@@ -3,7 +3,6 @@ package Browsers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Browser {
@@ -18,9 +17,10 @@ public class Browser {
             }
             case "chrome": {
                 WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions =new ChromeOptions();
-                chromeOptions.setHeadless(true);
-                driver = new ChromeDriver(chromeOptions);
+                //ChromeOptions chromeOptions =new ChromeOptions();
+                //chromeOptions.setHeadless(true);
+                //driver = new ChromeDriver(chromeOptions);
+                driver = new ChromeDriver();
                 break;
             }
             default:

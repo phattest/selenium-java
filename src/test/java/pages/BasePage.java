@@ -28,11 +28,20 @@ public abstract class BasePage {
     public WebElement find(How how, String locator){
         return driver.findElement(how.buildBy(locator));
     }
-    public WebElement find(By locator){return driver.findElement(locator) ;}
+
+    public WebElement find(By locator){
+        return driver.findElement(locator) ;
+    }
 
     public void check(How how, String locator) {
         if (!find(how, locator).isSelected()) {
             click(how, locator);
+        }
+    }
+
+    public void check(WebElement element) {
+        if (!element.isSelected()) {
+            element.click();
         }
     }
 
