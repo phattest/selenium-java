@@ -2,7 +2,7 @@
     <test name = "form authen">
         <parameter name="browserName" value ="chrome"/>
         <classes>
-            <class name="testcases.BMICalculatorTest"/>
+            <class name="testcases.CheckboxTest"/>
         </classes>
     </test>
 </suite>

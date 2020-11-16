@@ -17,6 +17,9 @@ public class Browser {
             }
             case "chrome": {
                 WebDriverManager.chromedriver().setup();
+                //ChromeOptions chromeOptions =new ChromeOptions();
+                //chromeOptions.setHeadless(true);
+                //driver = new ChromeDriver(chromeOptions);
                 driver = new ChromeDriver();
                 break;
             }
